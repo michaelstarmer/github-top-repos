@@ -20,7 +20,6 @@ const Landing = props => {
         const loadData = async () => {
             const fetched = await axios.get(API_GITHUB_URL);
             
-            console.log(fetched.data.items)
             setData(fetched.data.items);
             setLoading(false);
         }

@@ -22,9 +22,9 @@ const Badge = styled.span`
   border-radius: 5px;
 `;
 
-const Table = ({indexOfFirstPost, data, loading}) => {
+const Table = ({indexOfFirstPost, data, isLoading}) => {
 
-  if (loading)
+  if (isLoading)
   {
     return <h2>Loading...</h2>;
   }
